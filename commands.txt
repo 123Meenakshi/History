@@ -1,0 +1,328 @@
+ 
+  302  mkdir test
+  303  git init
+  304  mkdir test
+  305  cd test
+  306  git init
+  307  git status
+  308  touch a.txt
+  309  touch b.txt
+  310  ls -ltr
+  311  git status
+  312  git add .
+  313  git status
+  314  git rm --cached a.txt
+  315  git status
+  316  git status
+  317  git commit -m "b.txt"
+  318  git status
+  319  git add .
+  320  git status
+  321  git commit - "committed"
+  322  git commit -m "committed"
+  323  git log
+  324  git branch
+  325  git checkout  a66249
+  326  git log
+  327  git checkout master
+  328  git log
+  329  touch c.txt
+  330  git add c.txt
+  331  git commit -m "c.txt"
+  332  git log
+  333  git checkout  b212233
+  334  git log
+  335  touch d.txt
+  336  git add d.txt
+  337  git commit -m "d.txt"
+  338  git log
+  339  git log --oneline
+  340  git log --oneline2
+  341  git log --oneline 2
+  342  git log --oneline --2
+  343  git log --oneline  -2
+  344  git checkout master
+  345  git merge 1100b3c
+  346  git log --oneline
+  347  git branch worker
+  348  git log --oneline
+  349  git checkout worker
+  350  git log --oneline
+  351  touch e.txt
+  352  git add .
+  353  git commit -m "e.txt"
+  354  git log --oneline
+  355  git checkout master
+  356  touch f.txt
+  357  git add f.txt
+  358  git commit -m "f.txt"
+  359  git log --oneline
+  360  git checkout 913f369
+  361  git log --oneline
+  362  git log --all --online
+  363  git log --all --oneline
+  364  git log --all --oneline --graph
+  365  git checkout master
+  366  git merge worker
+  367  git log --all --oneline --graph
+  368  touch g.txt
+  369  git add .
+  370  git commit -m "g.txt"
+  371  git log --all --oneline --graph
+  372  git status
+  373  git add .
+  374  git checkout worker
+  375  git status
+  376  git add .
+  377  git commit -m "added oneline to e.txt"
+  378  git log --all --oneline --graph
+  379  git checkout master
+  380  git merge worker
+  381  git log --all --oneline --graph
+  382  history
+  383  notepad e.txt
+  384  git add e.txt
+  385  git commit -m "added oneline to e.txt"
+  386  git checkout worker
+  387  notepad e.txt
+  388  git add e.txt
+  389  git commit -m "second line added to e.txt"
+  390  git log --all --oneline --graph
+  391  git checkout master
+  392  git merge worker
+  393  git merge --abort
+  394  git status
+  395  git add .
+  396  git commit -m "resolved merge conflict"
+  397  git log --all --oneline --graph
+  398  cd ..
+  399  mkdir testrebase
+  400  cd testrebase
+  401  ls
+  402  git init
+  403  touch A
+  404  git add .
+  405  git commit -m "1 file added"
+  406  touch B
+  407  git add .
+  408  git commit -m "2nd file added"
+  409  touch C
+  410  git add .
+  411  git commit -m "3rd file added"
+  412  git log --oneline
+  413  git checkout 382bc0f
+  414  git branch run
+  415  git checkout run
+  416  touch D
+  417  git add .
+  418  git commit -m "4th file added"
+  419  touch E
+  420  git add .
+  421  git commit -m "5th file added'
+  422  git commit -m "5th file added"
+  423  git log --oneline
+  424  git log --all --oneline --graph
+  425  git checkout master
+  426  cd .
+  427  cd ..
+  428  cd testrebase1
+  429  cd Program Files
+  430  mkdir testrebase
+  431  cd testrebase
+  432  ls
+  433  git init
+  434  touch A
+  435  git add A
+  436  git commit -m "A file added"
+  437  touch B
+  438  git add B
+  439  git commit -m "B file added"
+  440  touch C
+  441  git add C
+  442  git commit -m "C file added"
+  443  git log --oneline
+  444  git checkout 35bf298
+  445  git branch run
+  446  git checkout run
+  447  touch D
+  448  git add D
+  449  git commit -m "D file added"
+  450  touch E
+  451  git add E
+  452  git commit -m "E file added"
+  453  git log --oneline
+  454  git log --oneline --all --graph
+  455  git checkout master
+  456  cd ..
+  457  cd testrebase1
+  458  git log --oneline --all --graph
+  459  git merge run
+  460  git log --oneline --all --graph
+  461  cd ..
+  462  cd testrebase2
+  463  git checkout master
+  464  git merge master
+  465  cd ..
+  466  cd testmerge2
+  467  cd testrebase2
+  468  git checkout run
+  469  git merge master
+  470  git checkout master
+  471  git merge master
+  472  git log --oneline --all --graph
+  473  cd rebase run
+  474  git rebase run
+  475  git log --oneline --all --graph
+  476  cd ..
+  477  cd testrebase1
+  478  git checkout master
+  479  git checkout run
+  480  git log --oneline --all --graph
+  481  git rebase master
+  482  history
+  483  git init
+  484  history
+  485  cd ..
+  486  cd c
+  487  cd ..
+  488  mkdir rebase
+  489  cd rebase
+  490  ls
+  491  git init
+  492  touch A
+  493  git add A
+  494  git commit -m "A file added"
+  495  touch B
+  496  git add B
+  497  git commit -m "B file added"
+  498  touch C
+  499  git add C
+  500  git commit -m "C file added"
+  501  git log --oneline
+  502  git checkout 4743e5e
+  503  git branch run
+  504  git checkout run
+  505  touch D
+  506  git add D
+  507  git commit -m "D file added"
+  508  touch E
+  509  git add E
+  510  git commit -m "E file added"
+  511  git log --oneline
+  512  git log --oneline --all --graph
+  513  cd ..
+  514  cd testrebase
+  515  git log --oneline --all --graph
+  516  cd ..
+  517  cd testmerge
+  518  git log --oneline --all --graph
+  519  git checkout master
+  520  git log --oneline --all --graph
+  521  git merge run
+  522  git log --oneline --all --graph
+  523  cd ..
+  524  cd testmerge1
+  525  git checkout run
+  526  git merge master
+  527  git checkout master
+  528  git merge master
+  529  git merge run
+  530  touch F
+  531  git add F
+  532  git commit -m "F file added"
+  533  git log --oneline --all --graph
+  534  git merge run
+  535  rm F
+  536  git log --oneline --all --graph
+  537  git rm F
+  538  git log --oneline --all --graph
+  539  git rm
+  540  git rm F
+  541  git log --oneline --all --graph
+  542  git rebase run
+  543  history
+  544  git log --oneline --all --graph
+  545  git checkout run
+  546  git log --oneline --all --graph
+  547  git add E
+  548*
+  549  git log --oneline --all --graph
+  550  git merge master
+  551  git log --oneline --all --graph
+  552  git rebase master
+  553  git log --oneline --all --graph
+  554  git checkout master
+  555  git rebase run
+  556  git log --oneline --all --graph
+  557  history
+
+ git init
+  457  touch 1.txt
+  458  touch 2.txt
+  459  touch 3.txt
+  460  ls
+  461  git status
+  462  git add 1.txt 2.txt 3.txt
+  463  git status
+  464  git commit -m "1 2 3"
+  465  git push origin master
+  466  git clone https://github.com/123Meenakshi/Task.git
+  467  git push origin master
+  468  touch 1
+  469  touch 2
+  470  touch 3
+  471  git add 1 2 3
+  472  git commit -m "1 2 3"
+  473  git push origin master
+  474  cd Task
+  475  ls
+  476  touch d
+  477  git add d
+  478  git commit -m "d"
+  479  git push origin master
+  480  git log --oneline
+  481  git revert 34c2859
+  482  ls
+  483  git push origin master
+  484  git log --oneline
+  485  git checkout 34c2859
+  486  ls
+  487  cd ..
+  488  ls
+  489  git status
+  490  git reset head~1
+  491  git status
+  492  git add 1 2 3
+  493  git commit -m "1 2 3"
+  494  git reset head ~1
+  495  git status
+  496  git log --oneline
+  497  git reset head~1
+  498  git status
+  499  ls
+  500  touch M
+  501  git add M
+  502  git commit -m "M"
+  503  touch A
+  504  touch B
+  505  git add B
+  506  git commit -m "B"
+  507  git status
+  508  git log --oneline
+  509  git reset head~1
+  510  git log --oneline
+  511  git status
+  512  git add B
+  513  git commit -m "B1"
+  514  git log --oneline
+  515  git reset --soft head~1
+  516  git log --oneline
+  517  git status
+  518  git commit -m "B2"
+  519  git status
+  520  git log --oneline
+  521  git reset --hard head~1
+  522  git log --oneline
+  523  git status
+  524  history
+
